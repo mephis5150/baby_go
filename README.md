@@ -11,12 +11,12 @@ go env GOPATH
 
 <p>&nbsp;</p>
 3. *สร้างตัวจัดการ package (คล้าย ๆ package.json ของ Node js)*
-  - **go mod init <** ~~GOPATH/pkg/mod/~~ **DIR>/\<sub DIR>**
+  - **go mod init <** ~~GOPATH/pkg/mod/~~ **DIR>/<sub DIR\>**
     - ex. `go mod init github.com/mephis5150`
 
 <p>&nbsp;</p>
 4. *clone repo มายัง path ที่สร้างด้วยคำสั่ง go mod init ...*
-  - **go get -u github.com/mephis5150/\<repo>/\<package>**
+  - **go get -u github.com/mephis5150/<repo\>/<package\>**
     - ex. `go get -u github.com/mephis5150/baby_go/hello`
 
 <p>&nbsp;</p>
