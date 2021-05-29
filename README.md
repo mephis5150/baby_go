@@ -1,4 +1,4 @@
-### Dowload package แบบ manual (Old!)
+### Dowload package โดบใช้ go mod, go get
 
 &nbsp;
 1. *ค้นหา go environment path*
