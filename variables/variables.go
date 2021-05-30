@@ -32,7 +32,7 @@ func IntegerRange() {
 	** END NOTE ** */
 
 	// Range of data type in Go
-	fmt.Println("\nRange of uint and int")
+	fmt.Println("\n**Range of uint and int")
 	const MaxUint = ^uint(0) // infinite XOR 0 => unsigned type
 	const MinUint = 0        // minimum unsigned int = 0
 
