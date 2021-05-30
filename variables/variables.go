@@ -32,7 +32,7 @@ func IntegerRange() {
 	** END NOTE ** */
 
 	// Range of data type in Go
-	fmt.Println("\n**Range of uint and int")
+	fmt.Println("\n** Range of uint and int")
 	const MaxUint = ^uint(0) // infinite XOR 0 => unsigned type
 	const MinUint = 0        // minimum unsigned int = 0
 
@@ -100,7 +100,7 @@ func VariableDoc() {
 	// Package scope ทั้ง package สามารถใช้ได้
 	fmt.Println("\n** Package scope: ตัวแปรสามารถเรียกใช้ได้ทั้ง package (Global variable)")
 	fmt.Println("ทำได้โดยการประกาศไว้ก่อนการสร้าง function ดังนี้")
-	fmt.Printf("var (\n\tStrVar     string = \"Type String\"\n\tByteVar    byte   = 255 // range 0-255\n\tRuneVar    rune   = 'A'\n\tBooleanVar bool   = true\n)\n")
+	fmt.Printf("var (\n\tStrVar     string = \"Type String\"\n\tByteVar    byte   = 255\n\tRuneVar    rune   = 'A'\n\tBooleanVar bool   = true\n)\n")
 	fmt.Println("Output:")
 	fmt.Println("\tstring : ", StrVar)
 	fmt.Println("\tbyte (0-255) : ", ByteVar)
