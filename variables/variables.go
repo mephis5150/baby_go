@@ -78,6 +78,9 @@ func VariableDoc() {
 	// Integer
 	var age = 33
 
+	// Float
+	const Pi float32 = 3.14
+
 	// The zero value
 	var ZeroString string // "" (empty string)
 	var ZeroInt int       // 0
@@ -89,6 +92,7 @@ func VariableDoc() {
 	fmt.Println("การประกาศตัวแปร นอกจาก var VAR1 string = \"Something\" ยังสามารถใช้วิธีประกาศตัวแปรภายใน function ได้ดังนี้")
 	fmt.Printf("\temail := \"%v\"\n", email) // ตัวแปรใน Go เมื่อประกาศแล้วต้องเรียกใช้
 	fmt.Println("\tvar age = ", age)
+	fmt.Println("\tvar pi float32 = ", Pi)
 
 	fmt.Println("\n** Zero value is default of each data type. => ค่าเริ่มต้นของตัวแปรที่ไม่ได้กำหนดค่า")
 	fmt.Println("Zero value of String : ", ZeroString)
@@ -106,6 +110,37 @@ func VariableDoc() {
 	fmt.Println("\tbyte (0-255) : ", ByteVar)
 	fmt.Println("\trune (convert char to int32) : ", RuneVar, "(A)")
 	fmt.Println("\tbool : ", BooleanVar)
+
+	// Constants
+	fmt.Println("\n** Constants: การประกาศตัวแปรแบบไม่สามารถกำหนดค่าใหม่ได้")
+	fmt.Printf("\tconst Pi float32 = %v\n", Pi)
+
+	// iota การกำหนดค่าต่อไปแบบอัตโนมัติ เริ่มจาก 0 และ +1 ไปเรื่อย ๆ
+	fmt.Println("\n** iota ใช้สำหรับการกำหนดค่าแบบอัตโนมัติโดยเริ่มจาก 0 และ +1 ไปเรื่อย ๆ")
+	fmt.Println("หากกำหนด iota ให้ตัวแปรตัวที่ 2 ค่าของ iota จะเริ่มที่ 1 เนื่องจากตัวแปรก่อนหน้าเป็น index 0")
+
+	const (
+		Zero = 0
+		One  = iota
+		Two
+		Three
+		Four
+		Five
+		Six
+		Seven
+	)
+
+	fmt.Println("ตัวอย่างการใช้ iota")
+	fmt.Println("const (\n\tZero = 0\n\tOne  = iota\n\tTwo\n\tThree\n\tFour\n\tFive\n\tSix\n\tSeven\n)")
+	fmt.Println("Output:")
+	fmt.Printf("\tZero = %v\n", Zero)
+	fmt.Printf("\tOne = %v\n", One)
+	fmt.Printf("\tTwo = %v\n", Two)
+	fmt.Printf("\tThree = %v\n", Three)
+	fmt.Printf("\tFour = %v\n", Four)
+	fmt.Printf("\tFive = %v\n", Five)
+	fmt.Printf("\tSix = %v\n", Six)
+	fmt.Printf("\tSeven = %v\n", Seven)
 
 	fmt.Println("\n*Tips: \n\tการประกาศตัวแปรโดยใช้ := ไม่สามารถใช้ภายนอก function ได้\n\tตัวแปรใน Go เมื่อประกาศแล้วต้องเรียกใช้เท่านั้น")
 }
