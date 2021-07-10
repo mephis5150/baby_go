@@ -11,8 +11,7 @@ go env GOPATH
 
 &nbsp;\
 3. *สร้างตัวจัดการ package (คล้าย ๆ package.json ของ Node js) จะได้ไฟล์ __go.mod__*
-  - **go mod init <** ~~GOPATH/pkg/mod/~~ **DIR>/<sub DIR\>** หรือ **ชื่อ module**
-    - ex. `go mod init github.com/mephis5150`
+  - **go mod init <ชื่อ module>**
     - ex. `go mod init BabyGo`
 
 &nbsp;\
