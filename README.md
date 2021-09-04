@@ -11,8 +11,8 @@ go env GOPATH
 
 &nbsp;\
 3. *สร้างตัวจัดการ package (คล้าย ๆ package.json ของ Node js) จะได้ไฟล์ __go.mod__*
-  - **go mod init <ชื่อ module>**
-    - ex. `go mod init BabyGo`
+  - **go mod init <ชื่อ module> หรือ <ชื่อ project> หรือ แนะนำเป็นชื่อ root directory ของ project**
+    - ex. `go mod init baby_go`
 
 &nbsp;\
 4. *clone repo มายัง path ที่สร้างด้วยคำสั่ง go mod init ... จะได้ไฟล์ __go.sum__*
